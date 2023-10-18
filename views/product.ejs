@@ -154,7 +154,7 @@ th{
                 <form class="pay-form">
                     <input type="hidden" name="name" value="<%=find.name%>">
                     <input type="hidden" name="amount" value="<%=find.price%>">
-                    <input type="hidden" name="description" value="Buying Shoes">
+                    <input type="hidden" name="description" value="Buying Shoes <%=find.name%>">
                     <input type="submit" style="width: 90%;height: 50px;border-radius: 5px;font-size: 14px;letter-spacing: 3px;font-weight: 700;display: flex;justify-content: center;align-items: center;margin-top: 8%;background-color: #929846;" value="Place Order">
                 </form>
             </div>
@@ -295,7 +295,7 @@ $(document).ready(function(){
 						"image": "https://dummyimage.com/600x400/000/fff",
 						"order_id": ""+res.order_id+"",
 						"handler": function (response){
-							alert("Payment Succeeded");
+							alert("Payment Successfully Done");
 							// window.open("/","_self")
 						},
 						"prefill": {
@@ -312,7 +312,7 @@ $(document).ready(function(){
 					};
 					var razorpayObject = new Razorpay(options);
 					razorpayObject.on('payment.failed', function (response){
-							alert("Payment Failed");
+							alert("Payment Failed.Please Try Again");
 					});
 					razorpayObject.open();
 				}
