@@ -105,6 +105,12 @@ app.get('/payment/:id',async(req,res)=>{
   res.render('product',{find})
 })
 
+app.get('/payments/:id',async(req,res)=>{
+  let {id}=req.params
+  let find=await Arrival.findById(id)
+  res.render('product',{find})
+})
+
 app.get('/login',(req,res)=>{
   res.render('login')
 })
