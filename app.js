@@ -82,7 +82,17 @@ app.get('/login',(req,res)=>{
     res.render('login')
 })
 
+app.get('/cart1/:id',async(req,res)=>{
+  let {id}=req.params;
+  let cart1=await Product.findById(id);
+  res.render('cart1',{cart1});
+})
 
+app.get('/cart2/:id',async(req,res)=>{
+  let {id}=req.params
+  let cart2=await Arrival.findById(id)
+  res.render('cart2',{cart2})
+})
 
 app.get('/products/:id',async (req,res)=>{
   let {id}=req.params
@@ -143,6 +153,7 @@ app.post('/login',
       res.redirect('/login');
     });
   });
+  
   
   
 const paymentRoute = require('./routes/paymentRoute');

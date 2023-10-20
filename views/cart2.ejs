@@ -6,13 +6,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-         *{
+        *{
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
             text-decoration: none;
             list-style: none;
             font-family: sans-serif;
+            
         }
         nav{
             width: 100%;
@@ -41,126 +42,135 @@
             color: #97989B;
             padding: 0px 15px;
         }
-       .container{
+      
+        .container{
+            display: grid;
+            grid-template-rows:auto auto ;
+        }
+        
+        .main{
+           
+            border-style: solid;
+            border-width: 30px 80px 0px 80px;
+            border-color: white;
+            letter-spacing: 2px;
+        }
+        .box{
+            margin-top: 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(650px,auto));
+            grid-auto-rows: minmax(650px,auto);
+        }
+        .box1{
+            margin-left: 10%;
+        }
+        .footer{
+                border-style: solid;
+                border-width: 80px 110px 80px 110px;
+                border-color: white;
+                display: grid;
+                grid-template-columns: repeat(auto-fill,minmax(300px,auto));
+                grid-auto-rows: minmax(300px,auto);
+                column-gap: 30px;
+        }
+        .social{
+                letter-spacing: 2px;
+        }
+        .card{
+            display: flex;
+            background-color: #F1F1EF;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+        .social{
+            margin-left: 22%;
+        }
+        .card img{
+            height:30px;
+            margin-left: 1%;
+        }
+        .advantage{
+            border-style: solid;
+            border-width: 20px 100px;
+            border-color: white;
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(400px,auto));
+            grid-auto-rows: minmax(100px,auto);
+            column-gap: 20px;
+        }
+        .features{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 2px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .last{
+            margin-top: 15%;
+                background-image: url('https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-store-cta-image-bg.jpg');
+                background-position:center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-style: solid;
+                border-width: 0px 40px;
+                border-color: white;
+                height: 100vh;
+            }
+            /* table{
+                border-collapse: collapse;
+            } */
+            .table1 td, th {
+                padding: 20px;
+            border: 0.5px solid black;
+            text-align: left;
+            
+            }
+           .table{
+            display: grid;
+            grid-template-rows: 20px auto auto;
+            column-gap: 20px;
             width: 100%;
             height: 100%;
+            text-align: left;
+            font-size: 16px;
+            font-weight: 700;
+            }
+           .table1{
+            margin-top: 80px;
             display: grid;
-            grid-template-rows:auto auto auto 100vh auto 1px auto 100px;
-       }
-      
-       
-    
-    
-    .last{
-        background-image: url('https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-store-cta-image-bg.jpg');
-        background-position:center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-style: solid;
-        border-width: 0px 40px;
-        border-color: white;
-    }
-  
-   
-
-   
-   .part{
-        border-style: solid;
-        border-width: 30px 140px;
-        border-color: white;
-        display: grid;
-        grid-template-columns: repeat(auto-fill,minmax(400px,auto));
-        grid-auto-rows: minmax(500px,auto);
-        column-gap: 20px;
-   }
-   .footer{
-        border-style: solid;
-        border-width: 80px 110px 80px 110px;
-        border-color: white;
-        display: grid;
-        grid-template-columns: repeat(auto-fill,minmax(300px,auto));
-        grid-auto-rows: minmax(300px,auto);
-        column-gap: 30px;
-   }
-   .social{
-        letter-spacing: 2px;
-   }
-   .card{
-       display: flex;
-       background-color: #F1F1EF;
-       justify-content: center;
-       align-items: center;
-   }
-   .brand{
-        border-style: solid;
-        border-width: 20px 160px;
-        border-color: white;
-        display: grid;
-        grid-template-columns: repeat(auto-fill,minmax(180px,auto));
-        grid-auto-rows: minmax(110px,auto);
-        column-gap: 20px;
-      }
-      
-      .item img{
-        width: 410px;
-        height: 400px;
-      }
-      .social{
-        margin-left: 22%;
-      }
-      .card img{
-        height:30px;
-        margin-left: 1%;
-      }
-      .advantage{
-        border-style: solid;
-        border-width: 20px 100px;
-        border-color: white;
-        display: grid;
-        grid-template-columns: repeat(auto-fill,minmax(400px,auto));
-        grid-auto-rows: minmax(100px,auto);
-        column-gap: 20px;
-      }
-      .features{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        letter-spacing: 2px;
-        font-size: 18px;
-        font-weight: 600;
-      }
-      .main{
-        /* background-color: red;    */
-        border-style: solid;
-        border-width: 80px;
-        border-color: white;
-        display: grid;
-        grid-template-columns: repeat(auto-fill,minmax(500px,auto));
-        grid-auto-rows: minmax(500px,auto);
-        column-gap: 20px;
-      }
-      .view{
-        /* background-color: aqua; */
-        letter-spacing: 2px;
-      }
-      .related{
-        border-style: solid;
-        border-width: 40px 80px 40px 80px;
-        border-color: white;
-      }
-      .related_product{
-        display: grid;
-        grid-template-columns: repeat(auto-fill,minmax(400px,auto));
-        grid-auto-rows: minmax(400px,auto);
-        column-gap: 30px;
-      }
-      
-      .product img{
-        width: 410px;
-        height: 400px;
-        display: block;
-        margin: auto;
-      }
+            width: 100%;
+            height: 80%;
+            place-items: center;
+            text-align: left;
+           }
+           .table2{
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(700px,auto));
+            grid-auto-rows: minmax(600px,auto);
+            column-gap: 50px;
+            width: 100%;
+            height: 100%;
+            /* overflow: hidden; */
+           }
+           .coupon{
+            display: grid;
+            place-items: centre;
+            height: 30%;
+            width: 80%;
+            margin-left: 21%;
+            text-align: left;
+           }
+           .checkout{
+            display: grid;
+            place-items: centre;
+            height: 50%;
+            width: 80%;
+            text-align:left;
+            
+           }
     </style>
 </head>
 <body>
@@ -183,39 +193,73 @@
             <li><a href="#">SALE</a></li>
         </ul>
     </nav>
+    <div class="table" >
+        <p style="font-size: 55px;display: flex;justify-content: center;align-items: center;margin-top: 40px;">Shopping Cart</p>
+        <div class="table1" >
+            <table style="border: 2px solid black;width: 80%;">
+                <tr style="background-color: #fd8c66;">
+                    <td>Serial No</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Total</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img style="width: 100px;" src="<%=cart2.img%>" alt=""></td>
+                    <td><%=cart2.name%></td>
+                    <td>$<%=cart2.price%>.00</td>
+                    <td>1</td>
+                    <td>$<%=cart2.price%>.00</td>
+                </tr>
+                
+            </table>
+        </div>
+        <div class="table2" >
+            <div class="coupon">
+                <table style="border: 2px solid black;">
+                    <tr>
+                        <td  colspan="2" style="letter-spacing: 2px;background-color: #fd8c66;">COUPON</td>
+                        
+                    </tr>
+                    <tr>
+                        <td style="letter-spacing: 1px;position: relative;left: 10px;">Enter your coupon code if you have one.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="letter-spacing: 1px;"><input id="validate" style="width: 360px;height: 40px;position: relative;left: 10px;border: 1px solid black;padding-left: 10px;font-size: 16px;" type="text" placeholder="Coupon Code"></td>
+                        <td><button id="coupon_check" style="letter-spacing: 1px;width: 150px;height: 38px;border: 1px solid black;">Apply Coupon</button></td>
+                    </tr>
+                   
+                </table>
+            </div>
+            <div class="checkout">
+                <table style="border: 2px solid black;">
+                    <tr>
+                        <td colspan="2" style="letter-spacing: 2px;background-color: #fd8c66;">CART TOTAL</td>
+                    </tr>
+                    <tr>
+                        <td style="letter-spacing: 1px;position: relative;left: 10px;">Subtotal</td>
+                        <td>$<%=cart2.price%>.00</td>
+                    </tr>
+                    <tr>
+                        <td style="letter-spacing: 1px;position: relative;left: 10px;">Shipping</td>
+                        <td>$15.00</td>
+                    </tr>
+                    <tr>
+                        <td style="letter-spacing: 1px;position: relative;left: 10px;">Total</td>
+                        <td>$<%=cart2.price+15%>.00</td>
+                    </tr>
+                    <tr>
+                        <td><button style="letter-spacing: 1px;width: 40%;height: 35px;position: relative;left: 10px;border: 1px solid black;"><a href="/payments/<%=cart2._id%>">PROCEED TO CHECKOUT</a></button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
     <div class="container">
-        <div class="main">
-            <div class="view">
-                <img style="width: 500px;height: 500px;display: block;margin: auto;" src="<%=found1.img%>" alt="">
-            </div>
-            <div class="view">
-                <p style="font-size: 18px;color: #6E7051;">Men, Sneaker</p>
-                <p style="font-size: 30px;margin-top: 3%;"><%=found1.name%></p>
-                <p style="font-size: 27px;margin-top: 4%;color: #979A9B;font-weight: 600;">$<%=found1.price%></p>
-                <p style="position: relative;bottom: 5%;left: 12%;font-size: 18px;color: #979A9B;">& Free Shipping</p>
-                <p></p>
-                <p style="font-size: 18px;color: #979A9B;">Auctor eros suspendisse tellus venenatis sodales purus
-                <p style="font-size: 18px;color: #979A9B;margin-top: 1%;"> non pellentesque amet, nunc sit eu, enim fringilla egestas</p>
-                <p style="font-size: 18px;color: #979A9B;margin-top: 1%;"> pulvinar odio feugiat consectetur egestas magna pharetra</p>
-                <p style="font-size: 18px;color: #979A9B;margin-top: 1%;">cursus risus, lectus enim eget eu et lobortis faucibus</p>
-            </div>
-        </div>
-        <button style="font-size: 20px;font-weight: 700; width: 35%;height: 45px;border-radius: 5px; display: block;margin: auto;position: relative;bottom: 500%;left: 16%;"><a style="color: black;" href="/cart2/<%=found1._id%>">View Cart</a></button>
-        <div class="related">
-            <p style="font-size: 35px;color: #262B2C;font-weight: 600;margin-left: 1%;margin-bottom: 2%;">Related Products</p>
-            <div class="related_product">
-                <%for(let Shoes of related1){%>
-                <div class="product">
-                    <img  src="<%=Shoes.img%>" alt="">
-                    <p style="display: flex;justify-content: center;align-items: center;margin-top: 8%;font-size: 18px;font-weight: 600;"><%=Shoes.name%></p>
-                    <p style="display: flex;justify-content: center;align-items: center;margin-top: 2%;font-size: 17px;color: #97989B;">$<%=Shoes.price%></p>
-                    <p class="star" style="display: flex;justify-content: center;align-items: center;margin-top: 2%;"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
-                </div>
-                <%}%>
-            </div>
-        </div>
-
-        
     <div class="last">
         <p style="display: flex;justify-content: center;align-items: center;font-size: 64px;color: white;font-weight: 600;margin-top:20%;">Better for People & the Planet</p>
         <p style="display: flex;justify-content: center;align-items: center;font-size: 18px;color: white;">Ut eget at et aliquam sit quis nisl, pharetra et ac pharetra est dictum in vulputate</p>
@@ -235,7 +279,6 @@
             <p style="margin-left: 3%;">Free Return</p>
         </div>
     </div>
-
     <hr style="width: 80%;display: block;margin: auto;">
 
     <div class="footer">
@@ -274,6 +317,7 @@
         </div>
     </div>
 
+
     <div class="card">
         <p style="color: #979A9B;margin-left: 5%;">© 2023 Recycled Shoe Store. Powered by Recycled Shoe Store.</p>
         <img style="margin-left: 15%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/2560px-PayPal.svg.png" alt="">
@@ -283,5 +327,15 @@
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo0W4ycihcIRASJBApYuy-bt2xghRrdKb9YyoYcfFu5g&s" alt="">
     </div>
 </div>
+<script>
+    const a=document.getElementById('coupon_check')
+    const b=document.getElementById('validate')
+    a.addEventListener("click",function(){
+        if(b.value=="Arpit999")
+        alert("Hurray! Coupon Code Applied Successfully")
+        else
+        alert("Coupon Code Expired ! Please try some other Coupon Code")
+    })
+</script>
 </body>
 </html>
