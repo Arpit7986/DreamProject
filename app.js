@@ -49,6 +49,10 @@ mongoose.connect(process.env.DB_URL)
 app.get('/',(req,res)=>{
   res.render('login');
 })
+app.get('https://www.linkedin.com/login',(req,res)=>{
+  res.redirect('products')
+})
+
 
 app.get('/products',async (req,res)=>{
   let latest=await Arrival.find({})
@@ -77,6 +81,11 @@ client.messages
   .then((message) => console.log(message.sid))
   .catch((err)=>{console.log(err);})
 }
+
+
+
+
+
 
 app.get('/login',(req,res)=>{
     res.render('login')
